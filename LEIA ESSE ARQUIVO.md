@@ -25,6 +25,8 @@ procura no youyube, chatgpt, tiktok
 
 *não tenha medo* de mecher no codigo para tentar entender como ele funciona, no pior dos casos, é só baixar o repositório de novo
 
+lembre-se que exitem varios formas de resolver o *mesmo exercicio*, a minha e apenas uma delas
+
 link da lista do darlon: [LINK][https://darlonv.github.io/algoritmos/docs/Vetores_e_registros/Exerc%C3%ADcios/Vetores]
 
 qualquer duvida, chama no discord @fabiomorais123

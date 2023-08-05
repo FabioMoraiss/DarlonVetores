@@ -36,7 +36,7 @@ public class exercicio7 {
         }
     }
 
-    //função que vai receber o vetor repido e o numero para comparação
+    //função que vai receber o vetor repitido e o numero para comparação
     public static boolean estaContidoNoVetor(int[] freeza, int Gonhan) {
 
         //percorre o vetor dos numeros repidos

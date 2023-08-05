@@ -51,7 +51,7 @@ public class array {
 
         //aqui você decide quantas casas decimais quer no numero, de 0 até 6;
         int numeroDeCasasDecimais = 2;
-        double casas = Math.pow(10, 2);
+        double casas = Math.pow(10, numeroDeCasasDecimais);
         
         for(int i =0;i <t.length; i++) {
             float numeroAleatorio = (float) (Math.random() * range) + valorMinimo;
@@ -71,12 +71,31 @@ public class array {
         double valorMaximo = 100f;
         double  valorMinimo = 1f;
         double range = valorMaximo - valorMinimo;
-        int numeroDeCasasDecimais = 2;
-        double casas = Math.pow(10, 2);
+        double numeroDeCasasDecimais = 2.0;
+        double casas = Math.pow(10, numeroDeCasasDecimais);
         
         for(int i =0;i <t.length; i++) {
             double numeroAleatorio = (Math.random() * range) + valorMinimo;
-            float numeroTruncado = (float) (Math.floor(numeroAleatorio * casas) / casas);
+            double numeroTruncado =  (Math.floor(numeroAleatorio * casas) / casas);
+            novoArray[i] = numeroTruncado;
+        }
+        
+        return novoArray;
+        
+    }
+
+    public static double[] preencherArrayDouble(double[] t, int valorMin, int valorMax) {
+        
+        double[] novoArray = new double[t.length];
+        double valorMaximo = valorMax;
+        double  valorMinimo = valorMin;
+        double range = valorMaximo - valorMinimo;
+        double numeroDeCasasDecimais = 2.0;
+        double casas = Math.pow(10, numeroDeCasasDecimais);
+        
+        for(int i =0;i <t.length; i++) {
+            double numeroAleatorio = (Math.random() * range) + valorMinimo;
+            double numeroTruncado =  (Math.floor(numeroAleatorio * casas) / casas);
             novoArray[i] = numeroTruncado;
         }
         
