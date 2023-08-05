@@ -5,7 +5,7 @@ public class exercicio1 {
         int[] batatas = new int[8]; 
 
         // preenche o arry com elementos aleatórios
-        batatas = array.preencherArrayInteiro(batatas); 
+        batatas = array.preencherArrayInt(batatas); 
 
         //exibe os valores contidos no array
         array.exibirVetor(batatas); 

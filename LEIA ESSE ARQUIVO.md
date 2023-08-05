@@ -23,6 +23,8 @@ basta dar um CTRL + CLICK em cima da função, que o VSCODE te leva até ela
 lembre-se de sempre usar o modo *DEBUG* do vscode caso esteja com duvida no exercicio, *não sabe usar ?*
 procura no youyube, chatgpt, tiktok
 
+*não tenha medo* de mecher no codigo para tentar entender como ele funciona, no pior dos casos, é só baixar o repositório de novo
+
 link da lista do darlon: [LINK][https://darlonv.github.io/algoritmos/docs/Vetores_e_registros/Exerc%C3%ADcios/Vetores]
 
 qualquer duvida, chama no discord @fabiomorais123

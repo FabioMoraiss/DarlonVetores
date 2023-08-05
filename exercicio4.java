@@ -3,7 +3,7 @@ public class exercicio4 {
 
         //cria o arry e preenche ele
         int[] banana = new int[6];
-        banana = array.preencherArrayInteiro(banana, 6, 1);
+        banana = array.preencherArrayInt(banana, 6, 1);
         
         // exibe o vetor sem regras e pula linha 
         array.exibirVetor(banana);

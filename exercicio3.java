@@ -3,7 +3,7 @@ public class exercicio3 {
         int[] bolinhoDeArroz = new int[10];
 
         //prencher o arry com valors de -100 até 0;
-        bolinhoDeArroz = array.preencherArrayInteiro(bolinhoDeArroz, -100, 100);
+        bolinhoDeArroz = array.preencherArrayInt(bolinhoDeArroz, -100, 100);
 
         //exibe o vetor da primra vez
         array.exibirVetor(bolinhoDeArroz); 
@@ -26,7 +26,7 @@ public class exercicio3 {
         int[] arroz = new int[bolinho.length];
 
         for(int i =0; i<arroz.length; i++) { //for pra percorrer o vetor arroz
-            
+
             //condição do exerciccio
             if(bolinho[i] < 0) { 
                 arroz[i] = 0;

@@ -5,7 +5,7 @@ public class exercicio5 {
         int[] cachorro = new int[gato.length];
         
         //preenche o array
-        gato = array.preencherArrayInteiro(gato);
+        gato = array.preencherArrayInt(gato);
 
         //exibe o vertor sem order
         System.out.println("vetor sem ordem");

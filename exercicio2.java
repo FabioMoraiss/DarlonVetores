@@ -6,8 +6,8 @@ public class exercicio2 {
         int[] vetorB = new int[10]; 
 
         //você pode preencher os arrays A e B com os valores que desejar, se ficar mais facil de entender
-        vetorA = array.preencherArrayInteiro(vetorA);
-        vetorB = array.preencherArrayInteiro(vetorB);
+        vetorA = array.preencherArrayInt(vetorA);
+        vetorB = array.preencherArrayInt(vetorB);
 
 
         //exebir vetores
@@ -16,8 +16,11 @@ public class exercicio2 {
 
         //criar o vetor C com o tamanho de A +  tamanho de B
         int[] vetorC = new int[vetorA.length + vetorB.length];
+
+        //preenche o vetorC de acordo com as regras do exercicio
         vetorC = preencherVetorC(vetorA, vetorB);
 
+        //exibe o vetor
         array.exibirVetor(vetorC);
 
     }
