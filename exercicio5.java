@@ -9,13 +9,13 @@ public class exercicio5 {
 
         //exibe o vertor sem order
         System.out.println("vetor sem ordem");
-        array.exibirVetor(gato);
+        array.exibirArray(gato);
         System.out.println();
 
         //exebi o vetor com pares na frente
         cachorro = arrumarArray(gato);
         System.out.println("vetor com pares na frente");
-        array.exibirVetor(cachorro);
+        array.exibirArray(cachorro);
     }
 
     public static int[] arrumarArray(int[] papagaio) {

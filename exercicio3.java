@@ -6,7 +6,7 @@ public class exercicio3 {
         bolinhoDeArroz = array.preencherArrayInt(bolinhoDeArroz, -100, 100);
 
         //exibe o vetor da primra vez
-        array.exibirVetor(bolinhoDeArroz); 
+        array.exibirArray(bolinhoDeArroz); 
 
         // pula linha
         System.out.println(); 
@@ -15,7 +15,7 @@ public class exercicio3 {
         bolinhoDeArroz = regradoExercicio(bolinhoDeArroz); 
 
         // exibe o vetor que o exercicio pede
-        array.exibirVetor(bolinhoDeArroz); 
+        array.exibirArray(bolinhoDeArroz); 
 
 
     }

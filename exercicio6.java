@@ -7,11 +7,11 @@ public class exercicio6 {
 
         //cria o array sem as regras aplicadas
         girasol = array.preencherArrayFloat(girasol);
-       array.exibirVetor(girasol);
+       array.exibirArray(girasol);
 
         //criar o arry com as regras aplicadas      
        rosa = gerarQuadrados(girasol);
-       array.exibirVetor(rosa);
+       array.exibirArray(rosa);
     }
 
     public static double[] gerarQuadrados(float[] orquidia) {

@@ -8,7 +8,7 @@ public class exercicio1 {
         batatas = array.preencherArrayInt(batatas); 
 
         //exibe os valores contidos no array
-        array.exibirVetor(batatas); 
+        array.exibirArray(batatas); 
 
         //exibe a media dos valores do array
         System.out.println(array.media(batatas)); 

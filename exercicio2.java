@@ -11,8 +11,8 @@ public class exercicio2 {
 
 
         //exebir vetores
-        array.exibirVetor(vetorA);
-        array.exibirVetor(vetorB);
+        array.exibirArray(vetorA);
+        array.exibirArray(vetorB);
 
         //criar o vetor C com o tamanho de A +  tamanho de B
         int[] vetorC = new int[vetorA.length + vetorB.length];
@@ -21,7 +21,7 @@ public class exercicio2 {
         vetorC = preencherVetorC(vetorA, vetorB);
 
         //exibe o vetor
-        array.exibirVetor(vetorC);
+        array.exibirArray(vetorC);
 
     }
 

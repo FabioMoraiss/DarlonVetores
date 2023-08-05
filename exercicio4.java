@@ -6,7 +6,7 @@ public class exercicio4 {
         banana = array.preencherArrayInt(banana, 6, 1);
         
         // exibe o vetor sem regras e pula linha 
-        array.exibirVetor(banana);
+        array.exibirArray(banana);
         System.out.println(); 
 
         //regras do exercicio

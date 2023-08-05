@@ -9,7 +9,7 @@ public class array {
         int valorMinimo = 1;
 
         //range é o numero de possibilidades
-        int range = valorMaximo - valorMinimo;
+        int range = valorMaximo - valorMinimo -1;
         
         //gera um valor aleatório dentro do meu range, e coloca ele dentro do meu array
         for(int i =0;i <t.length; i++) {
@@ -32,7 +32,7 @@ public class array {
         int[] novoArray = new int[t.length];
         int valorMaximo = valorMax;
         int valorMinimo = valorMin;
-        int range = valorMaximo - valorMinimo;
+        int range = valorMaximo - valorMinimo - 1;
         
         for(int i =0;i <t.length; i++) {
             novoArray[i] = (int) (Math.random() * range) + valorMinimo;
@@ -64,6 +64,25 @@ public class array {
         return novoArray;
         
     }
+
+    public static double[] preencherArrayDouble(double[] t) {
+        
+        double[] novoArray = new double[t.length];
+        double valorMaximo = 100f;
+        double  valorMinimo = 1f;
+        double range = valorMaximo - valorMinimo;
+        int numeroDeCasasDecimais = 2;
+        double casas = Math.pow(10, 2);
+        
+        for(int i =0;i <t.length; i++) {
+            double numeroAleatorio = (Math.random() * range) + valorMinimo;
+            float numeroTruncado = (float) (Math.floor(numeroAleatorio * casas) / casas);
+            novoArray[i] = numeroTruncado;
+        }
+        
+        return novoArray;
+        
+    }
     
     public static float media(int[] arry) {
         float media;
@@ -79,7 +98,7 @@ public class array {
      * a outra recebe um array de numeros reais
      * a função que vai ser executada depende do tipo de parametro que você passar para ela
      */
-    public static void exibirVetor(int[] x) {
+    public static void exibirArray(int[] x) {
 
         for(int i=0; i<x.length; i++) {
             System.out.print(x[i] + " ");
@@ -87,7 +106,7 @@ public class array {
         System.out.println();
     }
 
-    public static void exibirVetor(float[] x) {
+    public static void exibirArray(float[] x) {
 
         for(int i=0; i<x.length; i++) {
             System.out.print(x[i] + " | ");
@@ -95,7 +114,7 @@ public class array {
         System.out.println();
     }
 
-    public static void exibirVetor(double[] x) {
+    public static void exibirArray(double[] x) {
 
         for(int i=0; i<x.length; i++) {
             System.out.print(x[i] + " | ");
