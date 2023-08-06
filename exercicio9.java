@@ -10,8 +10,11 @@ public class exercicio9 {
 
         //chamama o menu
         apresentacao();
-
+        
+        //pega a reposta do usuario
         int resposta = texto.inputInt();
+
+        //faz a ação de acordo com o numero
         switch(resposta) {
             case 1:
             exibirArrayNormal(paralelepipedo);
@@ -43,6 +46,7 @@ public class exercicio9 {
     }
 
     public static void exebirArrayInverso(double[] tetraedo) {
+
         texto.escreva("aqui está seu array invertido :)");
         double[] invertido = new double[tetraedo.length];
 
@@ -53,7 +57,10 @@ public class exercicio9 {
     public static double[] inverterArray(double[] icosaedro) {
         double[] retorno = new double[icosaedro.length];
         
+        //minha variavel auxialiar vai varrer o array de RETORNO de frete pra traz
         int variavelAuxiliar= 0;
+
+        //esse for varre o array ICOSAEDRO de traz pra frente.
         for(int i = icosaedro.length -1; i>=0; i --) {
             retorno[variavelAuxiliar] = icosaedro[i];
             variavelAuxiliar ++;

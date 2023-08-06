@@ -14,7 +14,7 @@ public class array {
         int valorMinimo = 1;
 
         // range é o numero de possibilidades
-        int range = valorMaximo - valorMinimo - 1;
+        int range = valorMaximo - valorMinimo + 1;
 
         // gera um valor aleatório dentro do meu range, e coloca ele dentro do meu array
         for (int i = 0; i < t.length; i++) {
@@ -40,7 +40,7 @@ public class array {
         int[] novoArray = new int[t.length];
         int valorMaximo = valorMax;
         int valorMinimo = valorMin;
-        int range = valorMaximo - valorMinimo - 1;
+        int range = valorMaximo - valorMinimo + 1;
 
         for (int i = 0; i < t.length; i++) {
             novoArray[i] = (int) (Math.random() * range) + valorMinimo;
@@ -55,7 +55,7 @@ public class array {
         float[] novoArray = new float[t.length];
         float valorMaximo = 100f;
         float valorMinimo = 1f;
-        float range = valorMaximo - valorMinimo;
+        float range = valorMaximo - valorMinimo + 1;
 
         // aqui você decide quantas casas decimais quer no numero, de 0 até 6;
         int numeroDeCasasDecimais = 2;
@@ -78,7 +78,7 @@ public class array {
         double[] novoArray = new double[t.length];
         double valorMaximo = 100f;
         double valorMinimo = 1f;
-        double range = valorMaximo - valorMinimo;
+        double range = valorMaximo - valorMinimo + 1;
         double numeroDeCasasDecimais = 2.0;
         double casas = Math.pow(10, numeroDeCasasDecimais);
 
@@ -97,7 +97,7 @@ public class array {
         double[] novoArray = new double[t.length];
         double valorMaximo = valorMax;
         double valorMinimo = valorMin;
-        double range = valorMaximo - valorMinimo;
+        double range = valorMaximo - valorMinimo +1;
         double numeroDeCasasDecimais = 2.0;
         double casas = Math.pow(10, numeroDeCasasDecimais);
 
