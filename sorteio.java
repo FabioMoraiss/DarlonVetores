@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class sorteio {
+    public static Random random = new Random();
 
     public static int sorteiaNumero(int mim, int max) {
         int valorMax = max;
@@ -48,6 +49,19 @@ public class sorteio {
 
         return numeroTruncado;
 
+    }
+
+    public static double altura() {
+        double alturaMaxima =2;
+        double alturaMinima= 1;
+        double numeroDeCasasDecimais = 2;
+        double casas = Math.pow(10, numeroDeCasasDecimais);
+        double range = alturaMaxima - alturaMinima ;
+        
+        double aleatorio = ((  Math.random() * range) +alturaMinima );
+        double truncado = (Math.floor(aleatorio * casas) /casas);
+
+        return truncado;
     }
 
 }
