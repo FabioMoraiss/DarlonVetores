@@ -1,3 +1,8 @@
+/*Leia um vetor A, com 10 elementos. Crie em vetor B da seguinte forma:
+coloque os números pares primeiro;
+coloque os números ímpares logo após os pares;
+exiba o vetor B. */
+
 public class exercicio5 {
     public static void main(String[] args) {
         //criar os arrys

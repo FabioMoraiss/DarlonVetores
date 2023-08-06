@@ -1,3 +1,6 @@
+/*Elaborar um programa que leia um vetor com 20 números inteiros.
+Escreva os elementos do vetor eliminando elementos repetidos. */
+
 public class exercicio7 {
     public static void main(String[] args) {
 

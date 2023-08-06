@@ -1,3 +1,6 @@
+/*Elaborar um programa que leia um vetor de 10 posições. 
+Contar e escrever quantos valores pares ele possui. */
+
 public class exercicio8 {
     public static void main(String[] args) {
 

@@ -1,9 +1,14 @@
+/*Elaborar um programa que leia um vetor C de 10 elementos inteiros. 
+Após o término da leitura, trocar todos os valores negativos do vetor C por 0.
+ Após todas as trocas terem sido efetuadas, escrever o novo vetor C. */
+
 public class exercicio3 {
     public static void main(String[] args) {
         int[] bolinhoDeArroz = new int[10];
 
         //prencher o arry com valors de -100 até 0;
         bolinhoDeArroz = array.preencherArrayInt(bolinhoDeArroz, -100, 100);
+        array.preencherArrayDouble(null, 0, 0);
 
         //exibe o vetor da primra vez
         array.exibirArray(bolinhoDeArroz); 

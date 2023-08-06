@@ -1,3 +1,9 @@
+/*Ler as notas finais de uma turma de 10 alunos armazenando-as em um vetor N. 
+A seguir calcule a média aritmética das notas dos alunos aprovados (nota >= 6,0).
+ Armazene em um vetor P a posição (índice) que cada aluno ocupa no vetor N, 
+ dos alunos que obtiveram nota maior que a mádia calculada. 
+ Imprimir a média calculada, em ordem crescente e logo após o vetor P. */
+
 public class exercicio14 {
     public static void main(String[] args) {
         //criar o vetor N, que armazena as notas finais 

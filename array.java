@@ -1,8 +1,5 @@
-import java.util.Scanner;
 
 public class array {
-
-    public static Scanner input = new Scanner(System.in);
 
     public static int[] preencherArrayInt(int[] t) {
 

@@ -1,3 +1,9 @@
+/*Uma empresa deseja fazer um levantamento do seu estoque.
+ Para isto possui para cada tipo de produto, o seu Nome, o valor unitário e a sua quantidade em estoque.
+  A empresa deseja emitir um relatório contendo, o Nome, quantidade, valor, unitário e o saldo ( valor total )
+  em estoque de cada tipo de produto. Ao final deseja-se saber quantos tipos de produtos existem em estoque 
+  e o saldo de todos os produtos. */
+
 public class exercicio24 {
     public static void main(String[] args) {
 

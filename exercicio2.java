@@ -1,3 +1,7 @@
+/* Leia dois vetores VA e VB de 10 posições cada um, contendo valores inteiros.
+ Em seguida, gere um vetor VC com 20 posições, 
+ contendo os valores de VA nas posições pares e os valores de VB nas posições ímpares. */
+
 public class exercicio2 {
     public static void main(String[] args) {
 

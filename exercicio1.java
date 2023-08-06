@@ -1,3 +1,5 @@
+/*Elaborar um programa que leia 8 números inteiros e exiba quantos são maiores que a média desses valores. */
+
 public class exercicio1 {
     public static void main(String[] args) {
 
