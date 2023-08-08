@@ -45,7 +45,7 @@ public class exercicio7 {
         //percorre o vetor dos numeros repidos
         for (int i = 0; i < freeza.length; i++) {
             
-            //tenta achar o numero I dentro do vetor dos repitidos
+            //tenta achar o numero na posicao I dentro do vetor dos repitidos
             if (freeza[i] == Gonhan) {
                 return true;
             }

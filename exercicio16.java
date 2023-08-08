@@ -39,7 +39,7 @@ public class exercicio16 {
     }
 }
 
-/* eu coloquei o numero digitado em uma variavel efefera, pois se colotar dentro do vetor direto,
+/* eu coloquei o numero digitado em uma variavel efefera, pois se colocar dentro do vetor direto,
  * o exercicio nao da certo, experimente vocë mesmo :)
  * se o numero já esta dentro do vetor, a funcao estaContidoNoVetor sempre vai retornar verdadeiro !
  */
