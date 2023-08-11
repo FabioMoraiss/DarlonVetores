@@ -2,22 +2,22 @@
 public class DESAFIO {
     public static void main(String[] args) {
         // declara meu array
-        int[] arroz = {10 ,20 ,30 ,40, 50, 60, 70, 80};
+        int[] vetorInicial = {10 ,20 ,30 ,40, 50, 60, 70, 80};
 
         // mostra na tela o numero de opera coes para fazer o PALINDROMO
-        System.out.println(numero_de_operacoes(arroz, 0));
+        System.out.println(numero_de_operacoes(vetorInicial, 0));
 
     }
 
     // retorna o numero de operacoes recursivamente
-    public static int numero_de_operacoes(int[] k, int contador) {
+    public static int numero_de_operacoes(int[] vetorVELHO, int contador) {
         contador++;
-        if (ehPalindromo(k)) {
+        if (ehPalindromo(vetorVELHO)) {
             contador--;
         } else {
-            int[] feijao = new int[k.length - 1];
-            feijao = fazer_a_soma(k);
-            contador = numero_de_operacoes(feijao, contador);
+            int[] vetorNOVO = new int[vetorVELHO.length - 1];
+            vetorNOVO = fazer_a_soma(vetorVELHO);
+            contador = numero_de_operacoes(vetorNOVO, contador);
 
         }
 
@@ -25,29 +25,29 @@ public class DESAFIO {
     }
 
     // faz a soma de acordo com as regras, e devolve um novo vetor com a soma.
-    public static int[] fazer_a_soma(int[] k) {
-        int[] abacaxi = new int[k.length - 1];
+    public static int[] fazer_a_soma(int[] vetorVELHO) {
+        int[] vetorNOVO = new int[vetorVELHO.length - 1];
         int posicaoDoMenor = -1;
         boolean foiPraDireita = false;
 
-        for (int i = 0; i < k.length; i++) {
-            if (verificaNumeroEmPosicoesOpostas(k, i)) {
+        for (int posicaoATUAL = 0; posicaoATUAL < vetorVELHO.length; posicaoATUAL++) {
+            if (verificaNumeroEmPosicoesOpostas(vetorVELHO, posicaoATUAL)) {
                 // nao faz nada
             } else {
-                posicaoDoMenor = encontrarOMenor(k, i);
+                posicaoDoMenor = encontrarOMenor(vetorVELHO, posicaoATUAL);
                 if (posicaoDoMenor == 0) {
                     // faz a soma da posicao 0 + posicao 1
-                    abacaxi[posicaoDoMenor] = k[posicaoDoMenor] + k[posicaoDoMenor + 1];
+                    vetorNOVO[posicaoDoMenor] = vetorVELHO[posicaoDoMenor] + vetorVELHO[posicaoDoMenor + 1];
                     foiPraDireita = true;
-                } else if (posicaoDoMenor == k.length - 1) {
+                } else if (posicaoDoMenor == vetorVELHO.length - 1) {
                     // faz a soma da ultima posicao - 1
-                    abacaxi[abacaxi.length - 1] = k[posicaoDoMenor] + k[posicaoDoMenor - 1];
+                    vetorNOVO[vetorNOVO.length - 1] = vetorVELHO[posicaoDoMenor] + vetorVELHO[posicaoDoMenor - 1];
                 } else {
-                    if (somaPraDIREITA(k, posicaoDoMenor)) {
-                        abacaxi[posicaoDoMenor] = k[posicaoDoMenor] + k[posicaoDoMenor + 1];
+                    if (somaPraDIREITA(vetorVELHO, posicaoDoMenor)) {
+                        vetorNOVO[posicaoDoMenor] = vetorVELHO[posicaoDoMenor] + vetorVELHO[posicaoDoMenor + 1];
                         foiPraDireita = true;
                     } else {
-                        abacaxi[posicaoDoMenor -1] = k[posicaoDoMenor] + k[posicaoDoMenor - 1];
+                        vetorNOVO[posicaoDoMenor -1] = vetorVELHO[posicaoDoMenor] + vetorVELHO[posicaoDoMenor - 1];
 
                     }
                 }
@@ -55,43 +55,43 @@ public class DESAFIO {
             }
         }
         if (foiPraDireita) {
-            abacaxi = fazerCopia(k, abacaxi, posicaoDoMenor);
+            vetorNOVO = fazerCopia(vetorVELHO, vetorNOVO, posicaoDoMenor);
         } else {
-            abacaxi = fazerCopia(k, abacaxi, posicaoDoMenor -1);
+            vetorNOVO = fazerCopia(vetorVELHO, vetorNOVO, posicaoDoMenor -1);
         }
 
-        return abacaxi;
+        return vetorNOVO;
 
     }
 
     // parei nessa parte de fazer a copia
-    public static int[] fazerCopia(int[] l, int[] abacaxi, int posicaoDoMenor) {
+    public static int[] fazerCopia(int[] vetorVELHO, int[] vetorNOVO, int posicaoDoMenor) {
 
-        for (int i = 0, j = 0; i < abacaxi.length; i++, j++) {
-            if ((abacaxi[i] == 0) && i != posicaoDoMenor) {
-                abacaxi[i] = l[j];
+        for (int i = 0, j = 0; i < vetorNOVO.length; i++, j++) {
+            if ((vetorNOVO[i] == 0) && i != posicaoDoMenor) {
+                vetorNOVO[i] = vetorVELHO[j];
             } else if (i == posicaoDoMenor) {
                 j++;
             }
         }
-        return abacaxi;
+        return vetorNOVO;
     }
 
     // encontra o menor valor entre dois, retora o menor
     // ao chegar nesse ponto, ja sei que os numeros sao diferentes, e nao sao iguais
-    public static int encontrarOMenor(int[] b, int t) {
+    public static int encontrarOMenor(int[] vetorVELHO, int posicaoATUAL) {
 
-        if (b[t] > b[b.length - 1 - t]) {
-            return b.length - 1 - t;
+        if (vetorVELHO[posicaoATUAL] > vetorVELHO[vetorVELHO.length - 1 - posicaoATUAL]) {
+            return vetorVELHO.length - 1 - posicaoATUAL;
         }
 
-        return t;
+        return posicaoATUAL;
     }
 
     // verifica se os numeros em pocioes opostas do vetor, sao iguais
     // ele recebe a lista e a posicao;
-    public static boolean verificaNumeroEmPosicoesOpostas(int[] c, int s) {
-        if (c[s] == c[c.length - 1 - s]) {
+    public static boolean verificaNumeroEmPosicoesOpostas(int[] vetorVELHO, int posicaoATUAL) {
+        if (vetorVELHO[posicaoATUAL] == vetorVELHO[vetorVELHO.length - 1 - posicaoATUAL]) {
             return true;
         }
 
@@ -100,11 +100,11 @@ public class DESAFIO {
     }
 
     // recebe uma lista, e confere se ela eh palindroma
-    public static boolean ehPalindromo(int[] x) {
+    public static boolean ehPalindromo(int[] vetorVELHO) {
 
-        for (int i = 0; i < x.length; i++) {
+        for (int i = 0; i < vetorVELHO.length; i++) {
 
-            if (x[i] == x[x.length - 1 - i]) {
+            if (vetorVELHO[i] == vetorVELHO[vetorVELHO.length - 1 - i]) {
                 // nao faz nada
             } else {
                 return false;
@@ -114,9 +114,9 @@ public class DESAFIO {
         return true;
     }
 
-    public static boolean somaPraDIREITA(int[] vetor, int posicaoDoMenor) {
+    public static boolean somaPraDIREITA(int[] vetorVELHO, int posicaoDoMenor) {
 
-        if (verificaNumeroEmPosicoesOpostas(vetor, posicaoDoMenor + 1)) {
+        if (verificaNumeroEmPosicoesOpostas(vetorVELHO, posicaoDoMenor + 1)) {
             return false;
         }
         return true;
