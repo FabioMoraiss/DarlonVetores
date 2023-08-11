@@ -1,11 +1,20 @@
 /* LINK DO DESAFIO: https://olimpiada.ic.unicamp.br/pratique/p2/2021/f2/lista/ */
 public class DESAFIO {
     public static void main(String[] args) {
+        texto.pulaLinha();
         // declara meu array
-        int[] vetorInicial = {10 ,20 ,30 ,40, 50, 60, 70, 80};
+        int[] vetorInicial = {80 ,20 ,30 ,40, 50, 60, 70, 80};
+        
+        array.exibirArray(vetorInicial);
+
+        texto.pulaLinha();
 
         // mostra na tela o numero de opera coes para fazer o PALINDROMO
         System.out.println(numero_de_operacoes(vetorInicial, 0));
+
+        texto.pulaLinha();
+
+
 
     }
 
@@ -17,6 +26,8 @@ public class DESAFIO {
         } else {
             int[] vetorNOVO = new int[vetorVELHO.length - 1];
             vetorNOVO = fazer_a_soma(vetorVELHO);
+            array.exibirArray(vetorNOVO);
+            texto.pulaLinha();
             contador = numero_de_operacoes(vetorNOVO, contador);
 
         }
