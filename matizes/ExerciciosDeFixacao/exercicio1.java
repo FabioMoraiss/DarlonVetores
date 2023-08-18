@@ -1,3 +1,15 @@
+/* Escrever um algoritmo que gere a seguinte matriz:
+ 
+1 1 1 1 1 1 1
+1 9 9 9 9 9 1
+1 9 9 9 9 9 1
+1 9 9 9 9 9 1
+1 9 9 9 9 9 1
+1 9 9 9 9 9 1
+1 1 1 1 1 1 1
+ 
+ */
+
 package matizes.ExerciciosDeFixacao;
 
 import matizes.matrix;
