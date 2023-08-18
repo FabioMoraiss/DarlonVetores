@@ -1,4 +1,8 @@
+
 /* LINK DO DESAFIO: https://olimpiada.ic.unicamp.br/pratique/p2/2021/f2/lista/ */
+
+import utilidades.texto;
+
 public class DESAFIO {
     public static void main(String[] args) {
         texto.pulaLinha();

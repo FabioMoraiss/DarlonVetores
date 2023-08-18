@@ -5,6 +5,8 @@ no qual todos os 20 números são diferentes.
 
  */
 
+import utilidades.texto;
+
 public class exercicio16 {
     public static void main(String[] args) {
         //cria o vetor do meu exercicio com 20 posicoes

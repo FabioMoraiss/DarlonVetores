@@ -4,6 +4,8 @@
   em estoque de cada tipo de produto. Ao final deseja-se saber quantos tipos de produtos existem em estoque 
   e o saldo de todos os produtos. */
 
+import utilidades.sorteio;
+
 public class exercicio24 {
     public static void main(String[] args) {
 

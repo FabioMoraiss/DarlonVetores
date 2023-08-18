@@ -1,3 +1,6 @@
+import utilidades.texto;
+import utilidades.sorteio;
+
 public class exercicio13 {
     public static void main(String[] args) {
 

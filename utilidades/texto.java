@@ -1,3 +1,4 @@
+package utilidades;
 import java.util.Scanner;
 
 public class texto {
