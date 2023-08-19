@@ -26,14 +26,14 @@ public class exercicio1 {
     }
 
     public static int[][] preencherGalinha(int[][] vaca) {
-        
-        for(int i = 0; i<vaca.length; i++) {
-            for(int j =0; j<vaca[0].length; j ++) {
-                if(i == 0 || i == vaca.length -1 || j == 0 || j == vaca[0].length -1) {
+
+        for (int i = 0; i < vaca.length; i++) {
+            for (int j = 0; j < vaca[0].length; j++) {
+                if (i == 0 || i == vaca.length - 1 || j == 0 || j == vaca[0].length - 1) {
                     vaca[i][j] = 1;
                 } else {
                     vaca[i][j] = 9;
-                }   
+                }
             }
         }
 
