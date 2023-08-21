@@ -1,6 +1,7 @@
 package matizes;
 
 import utilidades.sorteio;
+import utilidades.texto;
 
 public class matrix {
 
@@ -105,6 +106,16 @@ public class matrix {
         }
 
         return true;
+    }
+
+    public static void imprimirMatrisString(String[][] x) {
+        for (int i = 0; i < x.length; i++) {
+            for (int j = 0; j < x[0].length; j++) {
+                System.out.print(x[i][j] + " ");
+            }
+            texto.pulaLinha();
+        }
+
     }
 
 }
