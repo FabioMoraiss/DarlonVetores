@@ -118,4 +118,24 @@ public class matrix {
 
     }
 
+    public static String[] getColunaString(String[][] x, int coluna) {
+        String[] vetor = new String[x.length];
+
+        for(int i = 0; i<vetor.length; i++) {
+            vetor[i] = x[i][coluna];
+        }
+
+        return vetor;
+    }
+
+    public static String[] getLinhaString(String[][] x,int linha) {
+        String[] vetor = new String[x[0].length];
+
+        for(int i =0; i<vetor.length; i++) {
+            vetor[i] = x[linha][i];
+        }
+
+        return vetor;
+    }
+
 }

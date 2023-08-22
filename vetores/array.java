@@ -150,6 +150,21 @@ public class array {
         System.out.println();
     }
 
+    public static boolean arrayIgualElemento(String[] x, String p) {
+        int contador =0;
+        for(int i =0; i<x.length; i++) {
+            if(x[i] == p) {
+                contador ++;
+            }
+        }
+
+        if(contador == x.length) {
+            return true;
+        }
+
+         return false;
+    }
+
    
 
 }

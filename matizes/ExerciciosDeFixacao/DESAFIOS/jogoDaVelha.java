@@ -2,12 +2,16 @@ package matizes.ExerciciosDeFixacao.DESAFIOS;
 
 import matizes.matrix;
 import utilidades.texto;
+import vetor.array;
 
 public class jogoDaVelha {
     public static void main(String[] args) {
+        int ganhador = -1;
         boolean estaAcabado = true;
         texto.escreva("bem vindo jogador !");
         texto.pulaLinha();
+
+        String[][] velha = { { "#", "#", "#" }, { "#", "#", "#" }, { "#", "#", "#" } };
 
         String[][] jogo = new String[3][3];
         jogo = preencherJogo(jogo);
@@ -17,9 +21,23 @@ public class jogoDaVelha {
         while (estaAcabado) {
             imprimirJogo(jogo);
             jogardor1(jogo);
+
+            if (isganho(jogo)) {
+                ganhador = 1;
+                break;
+
+            }
+
             imprimirJogo(jogo);
             jogardor2(jogo);
+            if (isganho(jogo)) {
+                ganhador = 2;
+                break;
+            }
         }
+
+        texto.pulaLinha();
+        texto.escreva("o ganhador foi o jogador " + ganhador);
 
     }
 
@@ -39,6 +57,38 @@ public class jogoDaVelha {
         texto.pulaLinha();
 
     }
+
+    /
+
+    public static boolean isganho(String[][] jogo) {
+
+        for (int i = 0; i < jogo.length; i++) {
+            if (isLinhIgual(i, jogo)) {
+                return true;
+            }
+            if (isColunaIgual(i, jogo)) {
+                return true;
+            }
+
+        }
+        return false;
+    }
+
+    public static boolean isLinhIgual(int i,String[][] jogo) {
+        for(int j=0; j<jogo.length; j++) {
+            if(jogo[][])
+        }
+     }
+
+    public static boolean isColunaIgual(int i,String[][] jogo) {
+        String[] coluna = matrix.getColunaString(jogo, i);
+
+        String caractere1= "X";
+        String caractere2 = "O";
+
+        if(array.arrayIgualElemento(coluna, caractere1))
+
+     }
 
     public static void jogardor1(String[][] jogo) {
         boolean jogadaInvalida = true;
