@@ -55,6 +55,7 @@ public class jogoDaVelha {
                 jogadaInvalida = false;
             } else {
                 texto.escreva(" JOGADA INVALIDA ! BAKA");
+                imprimirJogo(jogo);
             }
         }
 
